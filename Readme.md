@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Marina Lik](https://up.htmlacademy.ru/htmlcss/17/user/372633).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://up.htmlacademy.ru/htmlcss/17/user/8589).
 
 ---
 
