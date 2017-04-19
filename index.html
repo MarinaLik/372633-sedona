@@ -90,20 +90,20 @@
         
         <a href="#modal" class="modal-btn">Поиск гостиницы в Седоне</a>
           <div id="modal" class="modal-form">
-            <form action="#" method="post">
-              <label class="date">Дата заезда:
-                <input type="date" name="arrival-date" placeholder="24 апреля 2016">
+            <form action="#" method="get" class="modal-search"> <!--get/post? Должна привести на страницу hotesl.html с результатами?-->
+              <label>Дата заезда:
+                <input type="date" class="date" name="arrival-date" placeholder="24 апреля 2016">
                 <!--здесь должен быть элемент для календаря-->
               </label>
-              <label class="date">Дата выезда:
-                <input type="date" name="departure-date" placeholder="4 июля 2016">
+              <label>Дата выезда:
+                <input type="date" class="date" name="departure-date" placeholder="4 июля 2016">
                 <!--здесь должен быть элемент для календаря-->
               </label>
-              <label for="adult" class="number">
-                <input type="number" name="adult" id="adult" min="0" step="1" value="2">
+              <label>Взрослые:
+                <input type="number" class="number" name="adult" min="0" step="1" value="2">
               </label>
-              <label for="kids" class="number">
-                <input type="number" name="kids" id="kids" min="0" step="1" value="0">
+              <label>Дети:
+                <input type="number" class="number" name="kids" min="0" step="1" value="0">
               </label>
               <button class="search-btn" type="submit">Найти</button>
             </form>
@@ -114,8 +114,8 @@
     </main>
     
     <footer>
-      <div>
-        <a class="" href="#">#visitsedona</a>  <!--куда должна вести?-->
+      <div class="">
+        <a class="" href="#">#visitsedona</a>  <!--куда должна вести? Или не ссылка, а просто информация?-->
       </div>
       <div class="footer-social">
         <a class="social-btn twitter" href="#"></a>
@@ -124,7 +124,7 @@
       </div>
       <div class="footer-copyright">
         <p>website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" width="" height="" alt="HTML Академия"></a>
       </div>
     </footer>
   </body>

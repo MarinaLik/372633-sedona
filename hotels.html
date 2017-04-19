@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="nav-left"> <a href="#">Информация</a> </li>
+          <li class="nav-left"> <a href="#">Фото и видео</a> </li>
+          <li class="nav-right"> <a href="#">Карта штата</a> </li>
+          <li class="nav-right"> <a href="#">Гостиницы</a> </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a href="index.html">
+        <img src="img/logo.png" width="" height="" alt="Логотип"> </a>
+      </div>
+    </header>
+
+    <main>
+      <form action="#" method="get" class="filter">
+        <fieldset class="filter-box">
+          <legend>Инфраструктура:</legend>
+            <label><input type="checkbox" name="pool" checked>Бассейн</label>
+            <label><input type="checkbox" name="park">Парковка</label>
+            <label><input type="checkbox" name="wi-fi">wi-fi</label>
+        </fieldset>            
+        <fieldset class="filter-box">
+          <legend>Тип жилья:</legend>
+            <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+            <label><input type="checkbox" name="motel" checked>Мотель</label>
+            <label><input type="checkbox" name="apart" checked>Апартаменты</label>
+        </fieldset>
+        <div class="filter-box-price">
+          <p>Стоимость в сутки (р):</p>
+          <input type="range" name="price" min="0" max="" step="100">
+            <!--значения должны отражаться в "окошках", возможный вариант:
+            <p class="range"> от <output name="price-min">0</output></p>
+            <p class="range"> до <output name="price-max">3000</output></p>
+            тогда в form надо добавить oninput с формулой-->
+        </div>
+        <button class="filter-btn" type="submit">Показать</button>
+      </form>
+      
+      <div class="sort-box">
+        <p class="find">Найдено: <output name="sum"></output></p> <!--добавить подсчет li.result-item-->
+        <p>Сортировка:</p>
+        <ul class="sort-list">
+          <li class="sort-item sort-price">по цене</li> <!--связать с элементами li.result-item-->
+          <li class="sort-item sort-type">по типу</li>
+          <li class="sort-item sort-rating">по рейтингу</li>
+        </ul>
+        <div class="sort-sidebar">
+          <!-- + элементы для сортировки по возрастанию-убыванию-->
+        </div>
+      </div>
+      
+      <div class="result">
+        <ul class="result-list">
+          <li class="result-item">
+            <section>
+              <img src="" alt="Гостиница Amara resort and spa">
+              <h3>Amara resort &amp; spa</h3>
+              <span class="type">гостиница</span>
+              <span class="price">от 4000 р.</span>
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="reserve">Забронировать</a> <!--переход на страницу брониорования?--> 
+              <div class="rating-box">
+                <!--графическое отображение рейтинга в звездочках-->
+                <span class="rating">Рейтинг: 8,5</span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section>
+              <img src="" alt="">
+              <h3>Desert quail Inn</h3>
+              <span class="type">Мотель</span>
+              <span class="price">от 3000 р.</span>
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="reserve">Забронировать</a>
+              <div class="rating-box">
+                <!--графическое отображение рейтинга в звездочках-->
+                <span class="rating"></span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section>
+              <img src="" alt="">
+              <h3>Villas at poso diablo</h3>
+              <span class="type">Апартаменты</span>
+              <span class="price">от 2000 р.</span>
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="reserve">Забронировать</a>
+              <div class="rating-box">
+                <!--графическое отображение рейтинга в звездочках-->
+                <span class="rating"></span>
+              </div>
+            </section>
+          </li>
+        </ul>
+        
+      </div>
+    </main>
+
+    <footer>
+      <!--скопировать с index.html-->
+    </footer>
+  </body>
+</html>
