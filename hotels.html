@@ -11,10 +11,10 @@
       <header class="page-header">
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li class="main-nav-item1"> <a href="#">Информация</a> </li>
-            <li class="main-nav-item2"> <a href="#">Фото и видео</a> </li>
-            <li class="main-nav-item3"> <a href="#">Карта штата</a> </li>
-            <li class="main-nav-item4 active"> <a href="#">Гостиницы</a> </li>
+            <li class="main-nav-item"> <a href="#">Информация</a> </li>
+            <li class="main-nav-item"> <a href="#">Фото и видео</a> </li>
+            <li class="main-nav-item"> <a href="#">Карта штата</a> </li>
+            <li class="main-nav-item active"> <a href="#">Гостиницы</a> </li>
          </ul>
         </nav>
         <div class="logo">
@@ -25,7 +25,7 @@
 
       <main class="page-main">
         <form action="#" method="post" class="filter">
-          <fieldset class="form-droup filter-box">
+          <fieldset class="form-group filter-box">
             <legend>Инфраструктура:</legend>
             <input type="checkbox" id="pool" name="pool" checked>
             <label for="pool">Бассейн</label>
@@ -34,7 +34,7 @@
             <input type="checkbox" id="wi-fi" name="wi-fi">
             <label for="wi-fi">wi-fi</label>
           </fieldset>            
-          <fieldset class="form-droup filter-box">
+          <fieldset class="form-group filter-box">
             <legend>Тип жилья:</legend>
             <input type="checkbox" id="hotel" name="hotel" checked>
             <label for="hotel">Гостиница</label>
@@ -43,7 +43,7 @@
             <input type="checkbox" id="apart" name="apart" checked>
             <label for="apart">Апартаменты</label>
           </fieldset>
-          <fieldset class="form-droup filter-price">
+          <fieldset class="form-group filter-price">
             <legend>Стоимость в сутки (р):</legend>
             <input type="range" name="price" min="0" max="4000" step="100" value="3000">
             <button class="filter-btn" type="submit">Показать</button>
