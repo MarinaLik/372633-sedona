@@ -6,149 +6,147 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   
-  <body>
-    <header>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li class="nav-left"> <a href="#">Информация</a> </li>
-          <li class="nav-left"> <a href="#">Фото и видео</a> </li>
-          <li class="nav-right"> <a href="#">Карта штата</a> </li>
-          <li class="nav-right"> <a href="#">Гостиницы</a> </li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <img src="img/logo.png" width="" height="" alt="Логотип">
-      </div>
-    </header>
+  <body class="page">
+    <div class="page-contaner">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-item1"> <a href="#">Информация</a> </li>
+            <li class="main-nav-item2"> <a href="#">Фото и видео</a> </li>
+            <li class="main-nav-item3"> <a href="#">Карта штата</a> </li>
+            <li class="main-nav-item4"> <a href="#">Гостиницы</a> </li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img src="img/logo.png" width="" height="" alt="Логотип">
+        </div>
+      </header>
     
-    <main>
-      <div class="intro">
-        <img class="background-foto" src="img/welcome.jpeg" width="" height="" alt="Вид на горы">
-        <div class="intro-text">
-          <p class="welcome"> <strong>Welcom</strong> <i>to the gorgeous</i> </p>
-          <h1>Sedona</h1>
-          <q>Because the Grand Canyon sucks!</q>
+      <main class="page-main">
+        <div class="intro">
+          <img class="background-foto" src="img/welcome.jpeg" width="" height="" alt="Вид на горы">
         </div>
-        <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-      </div>
-
-      <div class="content">
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-              <!--Расположение блоков похоже на таблицу 3х4 -->
-        <div class="content-item item-1"> <!--второе свойство для изменения цвета фона, шрифта и положения -->
-          <h3>Настоящий<br>городок</h3>
-          <b> - № 1 - </b>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-
-        <div class="content-foto left">
-          <img src="img/town-foto.jpeg" width="" height="" alt="Городской пейзаж">
-        </div>
-
-        <section class="content-info">
-          <div class="content-box"> 
-            <a class="houses" href="#">  <!--ведет на страницу "гостиницы"?-->
-              <h3>Жилье</h3>
-            </a>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        
+        <section class="content">
+          <div class="title">
+            <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div> 
+          
+          <div class="feature-wide">
+            <div class="feature-info">
+              <span>Настоящий<br>городок</span>
+              <b> - № 1 - </b>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="feature-image">
+              <img src="img/town-foto.jpeg" width="" height="" alt="Городской пейзаж">
+            </div>
           </div>
-          <div class="content-box">
-            <a class="food" href="#">  <!--ведет на страницу "фото и видео" или "информация"?--> 
-              <h3>Еда</h3>
-            </a>  
+
+          <ul class="content-info">
+            <li class="content-item"> 
+              <span>Жилье</span>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="content-item">
+              <span>Еда</span>
               <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
-          </div>
-          <div class="content-box">
-            <a class="souvenir" href="#">  <!--ведет на страницу "фото и видео" или "информация"?-->
-              <h3>Сувениры</h3>
-            </a>
-            <p>Не только китайского, но и местного производства!</p>
-          </div>
-        </section>
+            </li>
+            <li class="content-item">
+              <span>Сувениры</span>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
          
-        <div class="content-foto right">
-          <img src="img/devis bridge.jpeg" width="" height="" alt="Мост дьявола">
-        </div>
-
-        <div class="content-item item-2">
-          <h3>Там есть<br>мост дьявола</h3>
-          <b> - № 2 - </b>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-
-        <div class="content-item">
-          <h3>Небольшая<br>площадь</h3>
-          <b> - № 3 - </b>
-          <p>Все достопримечательности находятся очень близко</p>
-        </div>
-        
-        <div class="content-item">
-          <h3>Красивая<br>дорога</h3>
-          <b> - № 4 - </b>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        
-        <div class="content-item">
-          <h3>Мало<br>туристов</h3>
-          <b> - № 5 - </b>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-      </div>
-
-      <section class="search-title">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>
-        и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        
-        <a href="#modal" class="modal-btn">Поиск гостиницы в Седоне</a>
-          <div id="modal" class="modal-form">
-            <form action="#" method="get" class="search-form"> <!--get/post? Должна привести на страницу hotesl.html с результатами?-->
-              <label for="arrival-date">Дата заезда:</label>
-              <div class="date">
-                <input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2016">
-                <button type="button" class="calendar"> <img src="img/calendar.png" alt="Календарь">
-                </button>
-              </div>
-              <label for="departure-date">Дата выезда:</label>
-              <div class="date">
-                <input type="date" id="departure-date" name="departure-date" placeholder="4 июля 2016">
-                <button type="button" class="calendar"> <img src="img/calendar.png" alt="Календарь">
-                </button>
-              </div>
-              <label for="adult">Взрослые:</label>
-                <div class="number">
-                  <button type="button" class="minus"></button>
-                  <input type="number" id="adult" name="adult" min="0" step="1" value="2">
-                  <button type="button" class="plus"></button>
-                </div>
-              <label for="kids">Дети:</label>
-              <div class="number">
-                <button type="button" class="minus"></button>
-                <input type="number" id="kids" name="kids" min="0" step="1" value="0">
-                <button type="button" class="plus"></button>
-              </div>
-              <button class="search-btn" type="submit">Найти</button>
-            </form>
-            <!--Закрытие окна?-->
+          <div class="feature-wide">
+            <div class="feature-info">
+              <span>Там есть<br>мост дьявола</span>
+              <b> - № 2 - </b>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="feature-image revers">
+              <img src="img/devis bridge.jpeg" width="" height="" alt="Мост дьявола">
+            </div>
           </div>
+          
+          <ul class="features">
+            <li class="features-item">
+              <span>Небольшая<br>площадь</span>
+              <b> - № 3 - </b>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="features-item">
+              <span>Красивая<br>дорога</span>
+              <b> - № 4 - </b>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="features-item">
+              <span>Мало<br>туристов</span>
+              <b> - № 5 - </b>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
 
-        <img src="img/map.png" width="" height="" alt="Карта">
-      </section>
-    </main>
+        <div class="search-hotels">
+          <span class="large">Заинтересовались?</span>
+          <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        
+          <div class="modal-btn">
+            <h2>Поиск гостиницы в Седоне</h2>
+          </div>
+            <div class="modal-form">
+              <form action="#" method="post" class="search-form">
+                <fielset class="date">
+                  <label for="arrival-date">Дата заезда:</label>
+                  <input type="date" id="arrival-date" name="arrival-date" placeholder="24 апреля 2016">
+                  <button type="button" class="calendar"></button>
+                </fielset>
+                <fielset class="date">
+                  <label for="departure-date">Дата выезда:</label>
+                  <input type="date" id="departure-date" name="departure-date" placeholder="4 июля 2016">
+                  <button type="button" class="calendar"></button>
+                </fielset>
+                <fielset class="number">
+                  <div class="adult">
+                    <label for="adult">Взрослые:</label>
+                    <button type="button" class="minus"></button>
+                    <input type="number" id="adult" name="adult" min="0" step="1" value="2">
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="kids">
+                    <label for="kids">Дети:</label>
+                    <button type="button" class="minus"></button>
+                    <input type="number" id="kids" name="kids" min="0" step="1" value="0">
+                    <button type="button" class="plus"></button>
+                  </div>
+                </fielset>
+                <button class="search-btn" type="submit">Найти</button>
+              </form>
+            </div>
+        </div>
+        
+        <div class="map">
+          <img src="img/map.png" width="" height="" alt="Карта">
+        </div>
+      </main>
     
-    <footer>
-      <div class="hashtag-box">
-        <span class="hashtag">#visitsedona</span> 
-      </div>
-      <div class="footer-social">
-        <a class="social-btn tw" href="#"> <img src="img/tw.png" alt="Твиттер"> </a>
-        <a class="social-btn fb" href="#"> <img src="img/fb.png" alt="Фейсбук"> </a>
-        <a class="social-btn youtube" href="#"> <img src="img/youtube" alt="Ютюб"> </a>
-      </div>
-      <div class="footer-copyright">
-        <p>website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="" height="" alt="HTML Академия"></a>
-      </div>
-    </footer>
+      <footer class="page-footer">
+        <div class="hashtag-box">
+          <span class="hashtag">#visitsedona</span> 
+        </div>
+        <div class="footer-social">
+          <a class="social-btn tw" href="#">Twitter</a>
+          <a class="social-btn fb" href="#">Fasebook</a>
+          <a class="social-btn youtube" href="#">Youtube</a>
+        </div>
+        <div class="footer-copyright">
+          <p>website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
+       </div>
+      </footer>
+    </div>
   </body>
 </html>
