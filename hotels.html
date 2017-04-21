@@ -1,116 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   
-  <body>
-    <header>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li class="nav-left"> <a href="#">Информация</a> </li>
-          <li class="nav-left"> <a href="#">Фото и видео</a> </li>
-          <li class="nav-right"> <a href="#">Карта штата</a> </li>
-          <li class="nav-right"> <a href="#">Гостиницы</a> </li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <a href="index.html">
-        <img src="img/logo.png" width="" height="" alt="Логотип"> </a>
-      </div>
-    </header>
+  <body class="page">
+    <div class="page-contaner">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-item1"> <a href="#">Информация</a> </li>
+            <li class="main-nav-item2"> <a href="#">Фото и видео</a> </li>
+            <li class="main-nav-item3"> <a href="#">Карта штата</a> </li>
+            <li class="main-nav-item4 active"> <a href="#">Гостиницы</a> </li>
+         </ul>
+        </nav>
+        <div class="logo">
+          <a href="index.html">
+          <img src="img/logo.png" width="" height="" alt="Логотип"> </a>
+        </div>
+      </header>
 
-    <main>
-      <form action="#" method="get" class="filter">
-        <fieldset class="filter-box">
-          <legend>Инфраструктура:</legend>
-            <label><input type="checkbox" name="pool" checked>Бассейн</label>
-            <label><input type="checkbox" name="park">Парковка</label>
-            <label><input type="checkbox" name="wi-fi">wi-fi</label>
-        </fieldset>            
-        <fieldset class="filter-box">
-          <legend>Тип жилья:</legend>
-            <label><input type="checkbox" name="hotel" checked>Гостиница</label>
-            <label><input type="checkbox" name="motel" checked>Мотель</label>
-            <label><input type="checkbox" name="apart" checked>Апартаменты</label>
-        </fieldset>
-        <div class="filter-box-price">
-          <p>Стоимость в сутки (р):</p>
-          <input type="range" name="price" min="0" max="" step="100">
-            <!--значения должны отражаться в "окошках", возможный вариант:
-            <p class="range"> от <output name="price-min">0</output></p>
-            <p class="range"> до <output name="price-max">3000</output></p>
-            тогда в form надо добавить oninput с формулой-->
-        </div>
-        <button class="filter-btn" type="submit">Показать</button>
-      </form>
+      <main class="page-main">
+        <form action="#" method="post" class="filter">
+          <fieldset class="form-droup filter-box">
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" id="pool" name="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" id="park" name="park">
+            <label for="park">Парковка</label>
+            <input type="checkbox" id="wi-fi" name="wi-fi">
+            <label for="wi-fi">wi-fi</label>
+          </fieldset>            
+          <fieldset class="form-droup filter-box">
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" id="hotel" name="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" id="motel" name="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" id="apart" name="apart" checked>
+            <label for="apart">Апартаменты</label>
+          </fieldset>
+          <fieldset class="form-droup filter-price">
+            <legend>Стоимость в сутки (р):</legend>
+            <input type="range" name="price" min="0" max="4000" step="100" value="3000">
+            <button class="filter-btn" type="submit">Показать</button>
+          </fieldset>
+        </form>
       
-      <div class="sort-box">
-        <p class="find">Найдено: <output name="sum"></output></p> <!--добавить подсчет li.result-item-->
-        <p>Сортировка:</p>
-        <ul class="sort-list">
-          <li class="sort-item sort-price">по цене</li> <!--связать с элементами li.result-item-->
-          <li class="sort-item sort-type">по типу</li>
-          <li class="sort-item sort-rating">по рейтингу</li>
-        </ul>
-        <div class="sort-sidebar">
-          <!-- + элементы для сортировки по возрастанию-убыванию-->
+        <div class="sort-box">
+          <span class="find">Найдено: <output name="sum">3</output></span>
+          <span class="sort">Сортировка:</span>
+          <ul class="sort-list">
+            <li class="sort-item sort-price active"><a href="#">по цене</a></li> 
+            <li class="sort-item sort-type"><a href="#">по типу</a></li>
+            <li class="sort-item sort-rating"><a href="#">по рейтингу</a></li>
+          </ul>
+          <div class="sort-sidebar">
+            <a href="#" class="arrow-up active"></a>
+            <a href="#" class="arrow-down"></a>
+          </div>
         </div>
-      </div>
       
-      <div class="result">
-        <ul class="result-list">
-          <li class="result-item">
-            <section>
-              <img src="" alt="Гостиница Amara resort and spa">
-              <h3>Amara resort &amp; spa</h3>
+        <div class="result">
+          <section class="result-item">
+            <img src="#" width="" height="" alt="Гостиница Amara resort and spa">
+            <div class="result-item-info">  
+              <h3><a href="#">Amara resort &amp; spa</a></h3>
               <span class="type">гостиница</span>
               <span class="price">от 4000 р.</span>
               <a href="#" class="more">Подробнее</a>
-              <a href="#" class="reserve">Забронировать</a> <!--переход на страницу брониорования?--> 
-              <div class="rating-box">
-                <!--графическое отображение рейтинга в звездочках-->
-                <span class="rating">Рейтинг: 8,5</span>
-              </div>
-            </section>
-          </li>
-          <li>
-            <section>
-              <img src="" alt="">
-              <h3>Desert quail Inn</h3>
+              <a href="#" class="reserve">Забронировать</a> 
+            </div>
+            <div class="rating-box">
+              <span class="rating">Рейтинг: 8,5</span>
+            </div>
+          </section>
+          
+          <section class="result-item">
+            <img src="#" width="" height="" alt="Мотель Desert quail Inn">
+            <div class="result-item-info">
+              <h3><a href="#">Desert quail Inn</a></h3>
               <span class="type">Мотель</span>
               <span class="price">от 3000 р.</span>
               <a href="#" class="more">Подробнее</a>
               <a href="#" class="reserve">Забронировать</a>
-              <div class="rating-box">
-                <!--графическое отображение рейтинга в звездочках-->
-                <span class="rating"></span>
-              </div>
-            </section>
-          </li>
-          <li>
-            <section>
-              <img src="" alt="">
-              <h3>Villas at poso diablo</h3>
+            </div>
+            <div class="rating-box">
+              <span class="rating">Рейтинг: 8,9</span>
+            </div>
+          </section>
+          
+          <section class="result-item">
+            <img src="#" width="" height="" alt="Апартаменты Villas at poso diablo">
+            <div class="result-item-info">
+              <h3><a href="#">Villas at poso diablo</a></h3>
               <span class="type">Апартаменты</span>
               <span class="price">от 2000 р.</span>
               <a href="#" class="more">Подробнее</a>
               <a href="#" class="reserve">Забронировать</a>
-              <div class="rating-box">
-                <!--графическое отображение рейтинга в звездочках-->
-                <span class="rating"></span>
-              </div>
-            </section>
-          </li>
-        </ul>
-        
-      </div>
-    </main>
+            </div>
+            <div class="rating-box">
+              <span class="rating">Рейтинг: 9,2</span>
+            </div>
+          </section>
+        </div>
+      </main>
 
-    <footer>
-      <!--скопировать с index.html-->
-    </footer>
+      <footer class="page-footer">
+        <div class="hashtag-box">
+          <span class="hashtag">#visitsedona</span> 
+        </div>
+        <div class="footer-social">
+          <a class="social-btn tw" href="#">Twitter</a>
+          <a class="social-btn fb" href="#">Fasebook</a>
+          <a class="social-btn youtube" href="#">Youtube</a>
+        </div>
+        <div class="footer-copyright">
+          <p>website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
+       </div>
+      </footer>
+    </div>
   </body>
 </html>
