@@ -1,0 +1,50 @@
+body {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+.page-title h1 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.modal-btn {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 99, 87);
+    text-align: center;
+}
+
+.result-item-info h3 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+}
+
+.main-nav-item a {
+    font-weight: bold;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.feature-info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 179, 210);
+    text-align: center;
+}
+
+.feature-info span {
+    font-size: 21px;
+    font-weight: bold;
+}
