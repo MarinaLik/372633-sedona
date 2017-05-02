@@ -22,9 +22,16 @@ body {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
+
+.page-header {
+    position: relative;
+}
+
 .main-nav-list {
     display: flex;
-    
+    margin: 0;
+    padding: 0; 
+    list-style: none; 
 }
 
 .main-nav-item {
@@ -32,7 +39,6 @@ body {
     padding-top: 15px;
     
     text-align: center;
-    list-style: none;
 }
 
 .main-nav-item:nth-child(2) {
@@ -56,6 +62,13 @@ body {
 
 .main-nav-list .active a {
     color: rgb(118, 99, 87);
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
 }
 
 /*.intro {
@@ -363,6 +376,7 @@ input[type="number"] {
 }
 
 .result-item-info h3 {
+    margin: 0;
     padding: 0;
     font-size: 21px;
     font-weight: bold;
@@ -421,13 +435,11 @@ input[type="number"] {
 
 .hashtag-box,
 .footer-copyright {
-    flex: 0 0 auto;
     width: 240px;
     text-align: center;
 }
 
 .footer-social {
-    flex: 0 0 auto;
     width: 200px;
     text-align: center;
 
