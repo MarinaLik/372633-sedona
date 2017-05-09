@@ -47,7 +47,17 @@
           </fieldset>
           <fieldset class="form-group filter-price">
             <legend>Стоимость в сутки (р):</legend>
-            <input type="range" name="price" min="0" max="4000" step="100" value="3000">
+            <div class="price-control">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="circle circle-min"></div>
+              <div class="circle circle-max"></div>
+            </div>
             <button class="filter-btn" type="submit">Показать</button>
           </fieldset>
         </form>

@@ -95,35 +95,33 @@
                   
           <section class="modal-box">
             <h2 class="modal-btn">Поиск гостиницы в Седоне</h2>
-            <div class="modal-form">
-              <form action="#" method="post" class="search-form">
-                <fielset class="form-group date">
-                  <label>Дата заезда:
-                  <input type="text" name="arrival-date" placeholder="24 апреля 2016">
-                  <button type="button" class="calendar"></button> </label>
-                </fielset>
-                <fielset class="form-group date">
-                  <label>Дата выезда:
-                  <input type="text" name="departure-date" placeholder="4 июля 2016">
-                  <button type="button" class="calendar"></button> </label>
-                </fielset>
-                <fielset class="form-group number">
-                  <div class="adult">
-                    <label>Взрослые:
-                    <button type="button" class="minus"></button>
-                    <input type="number" name="adult" min="0" step="1" value="2">
-                    <button type="button" class="plus"></button> </label>
-                  </div>
-                  <div class="kids">
-                    <label>Дети:
-                    <button type="button" class="minus"></button>
-                    <input type="number" name="kids" min="0" step="1" value="0">
-                    <button type="button" class="plus"></button> </label>
-                  </div>
-                </fielset>
-                <button class="search-btn" type="submit">Найти</button>
-              </form>
-            </div>
+            <form action="#" method="post" class="modal-form">
+              <fieldset class="form-group date">
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="text" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017">
+                <button type="button" class="icon-btn calendar"></button> 
+              </fieldset>
+              <fieldset class="form-group date">
+                <label for="departure-date">Дата выезда:</label>
+                <input type="text" id="departure-date" name="departure-date" placeholder="4 июля 2017">
+                <button type="button" class="icon-btn calendar"></button> 
+              </fieldset>
+              <fieldset class="form-group number">
+                <div class="adult">
+                  <label for="number-adult">Взрослые:</label>
+                  <button type="button" class="icon-btn minus"></button>
+                  <input type="text" id="number-adult" name="adult" placeholder="2">
+                  <button type="button" class="icon-btn plus"></button>
+                </div>
+                <div class="kids">
+                  <label for="number-kids">Дети:</label>
+                  <button type="button" class="icon-btn minus"></button>
+                  <input type="text" id="number-kids" name="kids" placeholder="0">
+                  <button type="button" class="icon-btn plus"></button>
+                </div>
+              </fieldset>
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
           </section>
         </div>
         
