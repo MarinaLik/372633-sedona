@@ -312,6 +312,7 @@ body {
     padding: 54px 0;
 
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
 }
 
 .form-group {
@@ -506,7 +507,7 @@ body {
 .filter {
     display: flex;
     padding-left: 57px;
-    padding-right: 59px;
+    padding-right: 63px;
     margin-bottom: 26px;
 
     text-transform: uppercase;
@@ -521,11 +522,11 @@ body {
 }
 
 .filter-box {
-    flex: 0 0 230px;
+    flex: 0 0 231px;
 }
 
 .filter-price {
-    flex: 0 0 318px;
+    flex: 0 0 315px;
     margin-left: auto;
 }
 
@@ -581,6 +582,14 @@ body {
     display: none;
 }
 
+.filter-box input[type="checkbox"]:disabled + label::before {
+    border: 2px solid rgb(106, 106, 106);
+}
+
+.filter-box input[type="checkbox"]:disabled + label::after {
+    background-position: -40px -149px;
+}
+
 .price-control {
     position: relative;
     
@@ -596,7 +605,7 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 51%;
 
     width: 2px;
     height: 22px;
@@ -617,7 +626,7 @@ body {
 
 .price-control .min-price,
 .price-control .max-price {
-    width: 90px;
+    width: 83px;
     padding-left: 65px;
 }
 
@@ -679,7 +688,7 @@ body {
 .filter-btn {
     display: block;
     margin: 0 auto;
-    padding: 6px 30px;
+    padding: 5px 30px;
 
     font-size: 14px;
     line-height: 21px;
@@ -729,12 +738,12 @@ body {
 }
 
 .sort {
-    margin-right: 35px;
+    margin-right: 40px;
 }
 
 .sort-list {
     display: flex;
-    min-width: 245px;
+    min-width: 240px;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -743,12 +752,13 @@ body {
 
 .sort-item a {
     text-decoration: none;
-    opacity: 0.3;
-    border-bottom-style: 1px dotted rgba(0, 0, 0, 0.3); 
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3); 
 }
 
 .sort-item a:hover {
     color: rgb(129, 179, 210);
+    border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
 .sort-item a:active {
@@ -1114,6 +1124,12 @@ body {
     width: 26px;
     height: 22px;
     background-position: -5px -149px;
+}
+
+.sprite-checkbox-checked {
+    width: 26px;
+    height: 22px;
+    background-position: -40px -149px;
 }
 
 .sprite-fb {
