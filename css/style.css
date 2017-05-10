@@ -100,10 +100,6 @@ body {
     background: transparent url(../img/shape-white.png) no-repeat;
 }
 
-.page-main b {
-    font-weight: normal;
-}
-
 .page-title {
     padding-top: 60px;
     padding-bottom: 23px;
@@ -145,7 +141,7 @@ body {
     background-color: rgb(129, 179, 210);
 }
 
-.feature-info span {
+.feature-info b {
     display: block;
     width: 170px;
     margin: 46px auto 25px;
@@ -216,15 +212,15 @@ body {
     background-position: -5px -619px;
 }
 
-.content-item span {
+.content-item b {
     display: block;
     margin-top: 137px;
     margin-bottom: 24px;
     padding-top: 25px;
 }
 
-.content-item span,
-.features-item span {
+.content-item b,
+.features-item b {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
@@ -255,7 +251,7 @@ body {
     text-align: center;
 }
 
-.features-item span {
+.features-item b {
     display: block;
     width: 130px;
     margin: 45px auto 25px;
@@ -809,15 +805,15 @@ body {
     margin-top: 5px;
     
     background: transparent url(../img/sprite.png) no-repeat;
-    background-position: -5px -45px;
-    opacity: 0.3;
+    background-position: -5px -65px;
+    opacity: 0.2;
 }
 
 .arrow-down {
     margin-top: 5px;
     background: transparent url(../img/sprite.png) no-repeat;
-    background-position: -5px -5px;
-    opacity: 0.3;
+    background-position: -5px -25px;
+    opacity: 0.2;
 }
 
 .sort-sidebar .active {
@@ -936,7 +932,7 @@ body {
 }
 
 .more:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     background-color: rgba (84, 150, 189);
 }
 
@@ -949,7 +945,7 @@ body {
 }
 
 .reserve:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     background-color: rgb(80, 62, 51);
 }
 
@@ -1031,6 +1027,8 @@ body {
 
 .footer-social {
     text-align: center;
+
+    font-size: 0;
 }
 
 .social-btn {
@@ -1042,12 +1040,17 @@ body {
     
     width: 48px;
     height: 48px;
-    margin: 0;
+    
+    margin-right: 5px;
 
     font-size: 0;
     text-decoration: none;
 
     background-color: rgb(129, 179, 210);
+}
+
+.social-btn:last-of-type {
+    margin-right: 0;
 }
 
 .social-btn:hover {
