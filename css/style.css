@@ -548,6 +548,7 @@ body {
 
     font-size: 16px;
     font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 .filter-box input[type="checkbox"] {
