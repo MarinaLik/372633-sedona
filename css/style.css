@@ -306,14 +306,15 @@ body {
     color: rgb(255, 255, 255);
     
     background-color: rgb(118, 99, 87);
-    cursor: pointer; /* изменение состояния? */
+    cursor: pointer;
 }
 
 .modal-form {
     position: absolute;
     top: 85px;
     left: 0;
-    
+
+    display: block;    
     width: 570px;
     padding: 54px 0;
 
