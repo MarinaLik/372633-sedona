@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
     font-size: 14px;
     font-weight: normal;
     line-height: 21px;
@@ -10,17 +9,15 @@ body {
     color: rgb(51, 51, 51);
 }
 
-.page {   
+.page {
     background-color: rgb(242, 242, 242);
 }
 
 .page-contaner {
     position: relative;
-    
     width: 1200px;
     margin: 0 auto;
     padding: 0;
-    
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
@@ -32,16 +29,14 @@ body {
 .main-nav-list {
     display: flex;
     margin: 0;
-    padding: 0; 
-    
-    list-style: none; 
+    padding: 0;
+    list-style: none;
 }
 
 .main-nav-item {
     flex: 0 0 240px;
     padding-top: 15px;
     padding-bottom: 15px;
-    
     vertical-align: middle;
     text-align: center;
 }
@@ -79,12 +74,9 @@ body {
 
 .intro {
     position: relative;
-    
     height: 508px;
-    
     background: rgb(129, 179, 210) url(../img/welcome.jpg) no-repeat;
     background-position: 0 -55px;
-    
 }
 
 .intro::after {
@@ -93,17 +85,14 @@ body {
     left: 0;
     bottom: 0;
     z-index: 1;
-    
     width: 100%;
     height: 57px;
-    
     background: transparent url(../img/shape-white.png) no-repeat;
 }
 
 .page-title {
     padding-top: 60px;
     padding-bottom: 23px;
-    
     background-color: rgb(255, 255, 255);
 }
 
@@ -111,12 +100,11 @@ body {
     width: 576px;
     margin: 0 auto;
     margin-bottom: 30px;
-    
     text-align: center;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
 }
 
 .page-title p {
@@ -127,7 +115,6 @@ body {
 .feature-wide {
     display: flex;
     flex-direction: row;
-
     background-color: rgb(129, 179, 210);
 }
 
@@ -137,7 +124,6 @@ body {
 
 .feature-info {
     flex: 0 0 400px;
-    
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgb(129, 179, 210);
@@ -147,7 +133,6 @@ body {
     display: block;
     width: 170px;
     margin: 46px auto 25px;
-    
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
@@ -156,8 +141,7 @@ body {
 .feature-info p {
     width: 270px;
     margin: 0 auto;
-    padding: 0;
-    padding-top: 21px;
+    padding: 21px 0 10px;
 }
 
 .revers p {
@@ -177,11 +161,9 @@ body {
 
 .content-item {
     position: relative;
-    
     flex: 0 0 400px;
     margin: 0;
     padding: 0;
-        
     text-align: center;
     list-style: none;
 }
@@ -192,10 +174,9 @@ body {
     top: 59px;
     left: 50%;
     transform: translateX(-50%);
-    
     background: transparent url(../img/sprite.png) no-repeat;
 }
-   
+
 .house::before {
     width: 75px;
     height: 72px;
@@ -239,17 +220,14 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    
     list-style: none;
-
     background-color: rgb(238, 238, 238);
 }
 
 .features-item {
-    flex: 0 0 400px;   
+    flex: 0 0 400px;
     margin: 0;
     padding: 0;
-
     text-align: center;
 }
 
@@ -269,7 +247,6 @@ body {
     margin-top: 52px;
     margin-left: auto;
     margin-right: auto;
-
     text-align: center;
 }
 
@@ -283,13 +260,11 @@ body {
 .search-hotels p {
     margin-top: 22px;
     margin-bottom: 50px;
-    
     line-height: 24px;
 }
 
 .modal-box {
     position: relative;
-    
     width: 570px;
     margin: 0 auto;
     padding: 0;
@@ -299,25 +274,20 @@ body {
     width: 570px;
     margin: 0 auto;
     padding: 29px 0;
-    
-    text-align: center;    
-    
+    text-align: center;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     color: rgb(255, 255, 255);
-    
     background-color: rgb(118, 99, 87);
     cursor: pointer;
 }
 
 .modal-form {
     position: absolute;
-
-    display: block;    
+    display: block;
     width: 570px;
     padding: 55px 0;
-
     background-color: rgb(255, 255, 255);
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
 }
@@ -329,13 +299,11 @@ body {
 .date,
 .number {
     position: relative;
-
     display: block;
     margin: 0;
     margin-bottom: 28px;
     margin-left: 55px;
     padding: 0;
-
     text-align: left;
     font-size: 0;
 }
@@ -348,7 +316,7 @@ body {
 .kids {
     display: inline-block;
     text-align: left;
-    vertical-align: top;  
+    vertical-align: top;
 }
 
 .kids {
@@ -360,10 +328,9 @@ body {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
-
     font-size: 14px;
     font-weight: bold;
-    line-height: 19px; 
+    line-height: 19px;
     text-transform: uppercase;
     font-family: "PT Sans", "Arial", sans-serif;
     color: rgb(0, 0, 0);
@@ -380,7 +347,6 @@ body {
 .modal-form input {
     padding-top: 8px;
     padding-bottom: 8px;
-    
     background-color: rgb(242, 242, 242);
     border: 2px solid rgb(242, 242, 242);
 }
@@ -424,14 +390,11 @@ body {
 
 .icon-btn {
     position: absolute;
-    
     display: inline-block;
     width: 38px;
     height: 39px;
-    
     text-align: center;
     vertical-align: bottom;
-
     font-size: 0;
     border: none;
     background-color: rgb(242, 242, 242);
@@ -449,7 +412,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
     background: transparent url(../img/sprite.png) no-repeat;
     opacity: 0.3;
 }
@@ -457,21 +419,18 @@ body {
 .calendar::before {
     width: 21px;
     height: 22px;
-    
     background-position: -5px -117px;
 }
 
 .minus::before {
     width: 12px;
     height: 3px;
-    
-    background-position: -5px -483px; 
+    background-position: -5px -483px;
 }
 
 .plus::before {
     width: 11px;
     height: 11px;
-    
     background-position: -5px -517px;
 }
 
@@ -498,13 +457,11 @@ body {
     margin: 0 55px;
     padding-top: 17px;
     padding-bottom: 17px;
-
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    
     background-color: rgb(129, 179, 210);
     border: none;
     cursor: pointer;
@@ -524,12 +481,10 @@ body {
     padding-left: 57px;
     padding-right: 60px;
     margin-bottom: 26px;
-
     text-transform: uppercase;
     font-family: "PT Sans", "Arial", sans-serif;
     line-height: 21px;
     color: rgb(255, 255, 255);
-
     background: rgb(129, 179, 210) url(../img/filter-background.jpg) no-repeat 0 0;
 }
 
@@ -545,7 +500,6 @@ body {
 .filter legend {
     padding-top: 27px;
     padding-bottom: 5px;
-
     font-size: 16px;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -557,11 +511,9 @@ body {
 
 .filter-box input[type="checkbox"] + label {
     position: relative;
-    
     display: block;
     margin: 15px 0 25px;
     padding-left: 41px;
-
     cursor: pointer;
 }
 
@@ -570,10 +522,8 @@ body {
     position: absolute;
     top: 0;
     left: 1px;
-    
     width: 17px;
     height: 17px;
-    
     border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
 }
@@ -583,10 +533,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    
     width: 26px;
     height: 22px;
-    
     background: transparent url(../img/sprite.png) no-repeat;
     background-position: -5px -149px;
     display: none;
@@ -614,12 +562,9 @@ body {
 
 .price-control {
     position: relative;
-
     margin-left: 12px;
-    
     height: 33px;
     margin-bottom: 19px;
-
     font-size: 0;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 2px;
@@ -630,11 +575,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 2px;
     height: 22px;
     transform: translate(-50%, -50%);
-
     background: rgb(255, 255, 255);
 }
 
@@ -643,10 +586,8 @@ body {
     padding-top: 5px;
     text-align: left;
     vertical-align: top;
-    
     font-size: 14px;
     line-height: 21px;
-    
     cursor: pointer;
 }
 
@@ -659,31 +600,26 @@ body {
 .price-control input {
     width: 50px;
     margin: 0;
-
     color: inherit;
     font: inherit;
-
     background: none;
     border: none;
 }
 
 .range-control {
     position: relative;
-
     margin-left: 12px;
     margin-bottom: 32px;
 }
 
 .range-control .scale {
     height: 2px;
-
     background: rgba(255, 255, 255, 0.3);
 }
 
 .range-control .bar {
     width: 80%;
     height: 2px;
-
     background: rgb(255, 255, 255);
 }
 
@@ -692,12 +628,10 @@ body {
     top: -9px;
     width: 4px;
     height: 4px;
-
     background: rgb(171, 171, 171);
     border: 8px solid rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    
     cursor: pointer;
 }
 
@@ -717,16 +651,13 @@ body {
     display: block;
     margin: 0 auto;
     padding: 6px 30px;
-
     font-size: 14px;
     line-height: 21px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-
     background: transparent;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 2px;
-    
     cursor: pointer;
 }
 
@@ -752,7 +683,6 @@ body {
 .find {
     padding-left: 10px;
     padding-right: 49px;
-    
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
@@ -777,14 +707,13 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    
     list-style: none;
 }
 
 .sort-item a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.3); 
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 }
 
 .sort-list .active a {
@@ -806,17 +735,14 @@ body {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    
     width: 18px;
     height: 15px;
-    
     font-size: 0;
     text-decoration: none;
 }
 
 .arrow-up {
     margin-top: 5px;
-    
     background: transparent url(../img/sprite.png) no-repeat;
     background-position: -5px -65px;
     opacity: 0.2;
@@ -864,7 +790,6 @@ body {
     display: flex;
     margin: 0;
     padding: 25px 71px 30px;
-    
     border-bottom: 1px solid rgb(242, 242, 242);
 }
 
@@ -889,7 +814,6 @@ body {
     margin: 0;
     margin-bottom: 6px;
     padding: 0;
-    
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
@@ -928,7 +852,6 @@ body {
 .more,
 .reserve {
     padding: 3px 16px 5px;
-    
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -936,7 +859,6 @@ body {
 
 .more {
     margin-right: 5px;
-    
     background-color: rgb(129, 179, 210);
 }
 
@@ -964,16 +886,12 @@ body {
 
 .rating {
     position: relative;
-    
     display: block;
     margin-top: 66px;
     padding-top: 4px;
-    
     width: 110px;
     height: 25px;
-    
     text-align: center;
-    
     background-color: rgb(242, 242, 242);
 }
 
@@ -982,36 +900,33 @@ body {
     position: absolute;
     top: -63px;
     right: 0;
-    
     display: block;
-    
     background: transparent url(../img/sprite.png) no-repeat;
 }
 
-.result-item:nth-child(1) .rating::before {
+.stars-4::before {
     width: 89px;
     height: 17px;
     background-position: -5px -592px;
 }
 
-.result-item:nth-child(2) .rating::before {
+.stars-3::before {
     width: 65px;
     height: 17px;
     background-position: -5px -565px;
 }
 
-.result-item:nth-child(3) .rating::before {
+.stars-2::before {
     width: 42px;
     height: 17px;
     background-position: -5px -538px;
 }
 
-.page-footer { 
+.page-footer {
     display: flex;
     justify-content: space-between;
     padding: 36px 70px;
     align-items: center;
-    
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1031,7 +946,6 @@ body {
 
 .hashtag {
     padding-left: 4px;
-    
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
@@ -1040,25 +954,19 @@ body {
 
 .footer-social {
     text-align: center;
-
     font-size: 0;
 }
 
 .social-btn {
     position: relative;
-    
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    
     width: 48px;
     height: 48px;
-    
     margin-right: 5px;
-
     font-size: 0;
     text-decoration: none;
-
     background-color: rgb(129, 179, 210);
 }
 
@@ -1080,7 +988,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
     background: transparent url(../img/sprite.png) no-repeat;
 }
 
@@ -1099,7 +1006,7 @@ body {
 .youtube::before {
     width: 20px;
     height: 16px;
-    background-position: -5px -730px;  
+    background-position: -5px -730px;
 }
 
 .tw:active::before,
@@ -1110,6 +1017,7 @@ body {
 
 .footer-copyright p {
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     padding: 0;
     padding-top: 11px;
@@ -1117,16 +1025,13 @@ body {
 
 .footer-copyright a {
     position: relative;
-    
     display: inline-block;
     min-width: 123px;
     height: 43px;
     text-align: center;
     vertical-align: top;
-    
     font-size: 0;
     text-decoration: none;
-    
     background: transparent;
 }
 
@@ -1135,10 +1040,8 @@ body {
     position: absolute;
     top: 2px;
     left: 5px;
-
     width: 113px;
     height: 39px;
-    
     background: transparent url(../img/sprite.png)no-repeat;
     background-position: -5px -372px;
 }
@@ -1146,7 +1049,7 @@ body {
 .footer-copyright a:hover::before {
     background-position: -5px -421px;
 }
- 
+
 .footer-copyright a:active::before {
     opacity: 0.3;
 }
