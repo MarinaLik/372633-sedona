@@ -271,6 +271,7 @@ body {
 }
 
 .modal-btn {
+    position: relative;
     width: 570px;
     margin: 0 auto;
     padding: 29px 0;
@@ -281,6 +282,7 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(118, 99, 87);
     cursor: pointer;
+    z-index: 2;
 }
 
 .modal-form {
@@ -289,18 +291,19 @@ body {
     width: 570px;
     padding: 55px 0;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    z-index: 1;
 }
 
 .modal-form-visible {
-    display: block;
+    transform: scaleY(1);
     animation-name: show;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
 .modal-form-invisible {
-    display: none;
+    transform: scaleY(0);
     animation-name: hide;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
@@ -1075,18 +1078,12 @@ body {
 @keyframes show {
     0% {transform: scaleY(0) translateY(-100%);
     }
-    50% {transform: scaleY(0.7) translateY(-20%);
-    }
-    70% {transform: scaleY(0.4) translateY(-50%);
-    }
     100% {transform: scaleY(1) translateY(0);
     }
 }
  
 @keyframes hide {
     0% {transform: scaleY(1) translateY(0);
-    }
-    70% {transform: scaleY(0.4) translateY(-20%);
     }
     100% {transform: scaleY(0) translateY(-100%);
     }
