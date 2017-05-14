@@ -285,11 +285,25 @@ body {
 
 .modal-form {
     position: absolute;
-    display: block;
+    transform-origin: top center;
     width: 570px;
     padding: 55px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+}
+
+.modal-form-visible {
+    display: block;
+    animation-name: show;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.modal-form-invisible {
+    display: none;
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .form-group {
@@ -922,6 +936,10 @@ body {
     background-position: -5px -538px;
 }
 
+.map {
+    background: rgb(242, 242, 242) url(../img/map.jpg) no-repeat;
+}
+
 .page-footer {
     display: flex;
     justify-content: space-between;
@@ -1054,8 +1072,25 @@ body {
     opacity: 0.3;
 }
 
-
-
+@keyframes show {
+    0% {transform: scaleY(0) translateY(-100%);
+    }
+    50% {transform: scaleY(0.7) translateY(-20%);
+    }
+    70% {transform: scaleY(0.4) translateY(-50%);
+    }
+    100% {transform: scaleY(1) translateY(0);
+    }
+}
+ 
+@keyframes hide {
+    0% {transform: scaleY(1) translateY(0);
+    }
+    70% {transform: scaleY(0.4) translateY(-20%);
+    }
+    100% {transform: scaleY(0) translateY(-100%);
+    }
+}
 
 
 .sprite {
